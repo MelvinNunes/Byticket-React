@@ -40,15 +40,13 @@ function Tickets() {
 
       <SectionTitle>Eventos</SectionTitle>
 
-      <div className="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4 justify-center">
-        <div className="flex flex-col w-3/4 cursor-pointer bg-white rounded">
-          <div className="p-4">
-            <img
-              src="https://flowbite.com/docs/images/blog/image-1.jpg"
-              className="rounded"
-              alt="foto"
-            />
-          </div>
+      <div className="grid gap-6 mb-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center">
+        <div className="flex flex-col w-72 h-80 cursor-pointer bg-white rounded">
+          <img
+            src="https://flowbite.com/docs/images/blog/image-1.jpg"
+            className="bg-cover rounded-t h-40"
+            alt="foto"
+          />
           <div className="ml-4">
             <h1 className="my-2 font-medium">Show de tecnologia</h1>
             <div className="flex items-center gap-2">
@@ -66,14 +64,12 @@ function Tickets() {
           </div>
         </div>
         {/* CAN DELETE */}
-        <div className="flex flex-col w-3/4 cursor-pointer bg-white rounded">
-          <div className="p-4">
-            <img
-              src="https://flowbite.com/docs/images/blog/image-1.jpg"
-              className="rounded"
-              alt="foto"
-            />
-          </div>
+        <div className="flex flex-col w-72 h-80 cursor-pointer bg-white rounded">
+          <img
+            src="https://flowbite.com/docs/images/blog/image-1.jpg"
+            className="bg-cover rounded-t h-40"
+            alt="foto"
+          />
           <div className="ml-4">
             <h1 className="my-2 font-medium">Show de tecnologia</h1>
             <div className="flex items-center gap-2">
@@ -90,14 +86,12 @@ function Tickets() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-3/4 cursor-pointer bg-white rounded">
-          <div className="p-4">
-            <img
-              src="https://flowbite.com/docs/images/blog/image-1.jpg"
-              className="rounded"
-              alt="foto"
-            />
-          </div>
+        <div className="flex flex-col w-72 h-80 cursor-pointer bg-white rounded">
+          <img
+            src="https://flowbite.com/docs/images/blog/image-1.jpg"
+            className="bg-cover rounded-t h-40"
+            alt="foto"
+          />
           <div className="ml-4">
             <h1 className="my-2 font-medium">Show de tecnologia</h1>
             <div className="flex items-center gap-2">
@@ -114,14 +108,12 @@ function Tickets() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-3/4 cursor-pointer bg-white rounded">
-          <div className="p-4">
-            <img
-              src="https://flowbite.com/docs/images/blog/image-1.jpg"
-              className="rounded"
-              alt="foto"
-            />
-          </div>
+        <div className="flex flex-col w-72 h-80 cursor-pointer bg-white rounded">
+          <img
+            src="https://flowbite.com/docs/images/blog/image-1.jpg"
+            className="bg-cover rounded-t h-40"
+            alt="foto"
+          />
           <div className="ml-4">
             <h1 className="my-2 font-medium">Show de tecnologia</h1>
             <div className="flex items-center gap-2">
@@ -138,14 +130,12 @@ function Tickets() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-3/4 cursor-pointer bg-white rounded">
-          <div className="p-4">
-            <img
-              src="https://flowbite.com/docs/images/blog/image-1.jpg"
-              className="rounded"
-              alt="foto"
-            />
-          </div>
+        <div className="flex flex-col w-72 h-80 cursor-pointer bg-white rounded">
+          <img
+            src="https://flowbite.com/docs/images/blog/image-1.jpg"
+            className="bg-cover rounded-t h-40"
+            alt="foto"
+          />
           <div className="ml-4">
             <h1 className="my-2 font-medium">Show de tecnologia</h1>
             <div className="flex items-center gap-2">
@@ -162,38 +152,12 @@ function Tickets() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-3/4 cursor-pointer bg-white rounded">
-          <div className="p-4">
-            <img
-              src="https://flowbite.com/docs/images/blog/image-1.jpg"
-              className="rounded"
-              alt="foto"
-            />
-          </div>
-          <div className="ml-4">
-            <h1 className="my-2 font-medium">Show de tecnologia</h1>
-            <div className="flex items-center gap-2">
-              <CalendarIcon className="w-4" />
-              <span className="text-sm">25 de Junho 2022</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <ClockIcon className="w-4" />
-              <span className="text-sm">18 horas</span>
-            </div>
-            <div className="flex items-center gap-2 mb-3">
-              <CoinIcon className="w-4" />
-              <span className="text-sm">200.00MT</span>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col w-3/4 cursor-pointer bg-white rounded">
-          <div className="p-4">
-            <img
-              src="https://flowbite.com/docs/images/blog/image-1.jpg"
-              className="rounded"
-              alt="foto"
-            />
-          </div>
+        <div className="flex flex-col w-72 h-80 cursor-pointer bg-white rounded">
+          <img
+            src="https://flowbite.com/docs/images/blog/image-1.jpg"
+            className="bg-cover rounded-t h-40"
+            alt="foto"
+          />
           <div className="ml-4">
             <h1 className="my-2 font-medium">Show de tecnologia</h1>
             <div className="flex items-center gap-2">

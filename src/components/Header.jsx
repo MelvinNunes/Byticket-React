@@ -7,7 +7,6 @@ import {
   BellIcon,
   MenuIcon,
   OutlinePersonIcon,
-  OutlineCogIcon,
   OutlineLogoutIcon,
 } from "../icons";
 import {
@@ -51,7 +50,7 @@ function Header() {
               <SearchIcon className="w-4 h-4" aria-hidden="true" />
             </div>
             <Input
-              className="pl-8 text-gray-700"
+              className="pl-8 text-gray-700 border py-2"
               placeholder="Procurar eventos"
               aria-label="Search"
             />
@@ -59,7 +58,7 @@ function Header() {
         </div>
         <ul className="flex items-center flex-shrink-0 space-x-6">
           {/* <!-- Theme toggler --> */}
-          <li className="flex">
+          {/* <li className="flex">
             <button
               className="rounded-md focus:outline-none focus:shadow-outline-purple"
               onClick={toggleMode}
@@ -70,7 +69,7 @@ function Header() {
                 <MoonIcon className="w-5 h-5" aria-hidden="true" />
               )}
             </button>
-          </li>
+          </li> */}
           {/* <!-- Notifications menu --> */}
           <li className="relative">
             <button
@@ -89,13 +88,23 @@ function Header() {
               align="right"
               isOpen={isNotificationsMenuOpen}
               onClose={() => setIsNotificationsMenuOpen(false)}>
-              <DropdownItem tag="a" href="#" className="justify-between">
+              <DropdownItem
+                tag="a"
+                href="#"
+                className="justify-between hover:bg-slate-50">
                 <span>Eventos</span>
-                <Badge type="danger">13</Badge>
+                <Badge className="text-red-400" type="danger">
+                  13
+                </Badge>
               </DropdownItem>
-              <DropdownItem tag="a" href="#" className="justify-between">
+              <DropdownItem
+                tag="a"
+                href="#"
+                className="justify-between hover:bg-slate-50">
                 <span>Vendas</span>
-                <Badge type="danger">2</Badge>
+                <Badge className="text-red-400" type="danger">
+                  2
+                </Badge>
               </DropdownItem>
             </Dropdown>
           </li>
@@ -107,7 +116,7 @@ function Header() {
               aria-label="Account"
               aria-haspopup="true">
               <Avatar
-                className="align-middle"
+                className="align-middle rounded-full w-9 h-9"
                 src="https://images.unsplash.com/photo-1502378735452-bc7d86632805?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=aa3a807e1bbdfd4364d1f449eaa96d82"
                 alt=""
                 aria-hidden="true"
@@ -115,16 +124,19 @@ function Header() {
             </button>
             <Dropdown
               align="right"
+              className="w-44"
               isOpen={isProfileMenuOpen}
               onClose={() => setIsProfileMenuOpen(false)}>
-              <DropdownItem tag="a" href="#">
+              <DropdownItem className="hover:bg-slate-50" tag="a" href="#">
                 <OutlinePersonIcon
                   className="w-4 h-4 mr-3"
                   aria-hidden="true"
                 />
                 <span>Meu Perfil</span>
               </DropdownItem>
-              <DropdownItem onClick={() => alert("Log out!")}>
+              <DropdownItem
+                className="hover:bg-slate-50"
+                onClick={() => alert("Log out!")}>
                 <OutlineLogoutIcon
                   className="w-4 h-4 mr-3"
                   aria-hidden="true"
