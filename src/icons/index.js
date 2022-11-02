@@ -29,8 +29,14 @@ import { ReactComponent as OutlineLogoutIcon } from "./outlineLogout.svg";
 import { ReactComponent as CoinIcon } from "./coin.svg";
 import { ReactComponent as ClockIcon } from "./clock.svg";
 import { ReactComponent as CalendarIcon } from "./calendar-event.svg";
+import { ReactComponent as StatsIcon } from "./chart-bar.svg";
+import { ReactComponent as HistoryIcon } from "./history.svg";
+import { ReactComponent as ClientIcon } from "./client.svg";
 
 export {
+  StatsIcon,
+  HistoryIcon,
+  ClientIcon,
   CoinIcon,
   ClockIcon,
   CalendarIcon,

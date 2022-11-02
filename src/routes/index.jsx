@@ -11,7 +11,9 @@ const Tables = lazy(() => import("../pages/Tables"));
 const Page404 = lazy(() => import("../pages/404"));
 const Blank = lazy(() => import("../pages/Blank"));
 const Tickets = lazy(() => import("../pages/Tickets"));
-
+const Stats = lazy(() => import("../pages/Stats"));
+const TransationHistory = lazy(() => import("../pages/TransationHistory"));
+const Clients = lazy(() => import("../pages/Clients"));
 /**
  * ⚠ These are internal routes!
  * They will be rendered inside the app, using the default `containers/Layout`.
@@ -32,29 +34,41 @@ const routes = [
     component: Tickets,
   },
   {
-    path: "/forms",
-    component: Forms,
+    path: "/stats",
+    component: Stats,
   },
   {
-    path: "/cards",
-    component: Cards,
+    path: "/history",
+    component: TransationHistory,
   },
   {
-    path: "/charts",
-    component: Charts,
+    path: "/clients",
+    component: Clients,
   },
-  {
-    path: "/buttons",
-    component: Buttons,
-  },
-  {
-    path: "/modals",
-    component: Modals,
-  },
-  {
-    path: "/tables",
-    component: Tables,
-  },
+  // {
+  //   path: "/forms",
+  //   component: Forms,
+  // },
+  // {
+  //   path: "/cards",
+  //   component: Cards,
+  // },
+  // {
+  //   path: "/charts",
+  //   component: Charts,
+  // },
+  // {
+  //   path: "/buttons",
+  //   component: Buttons,
+  // },
+  // {
+  //   path: "/modals",
+  //   component: Modals,
+  // },
+  // {
+  //   path: "/tables",
+  //   component: Tables,
+  // },
   {
     path: "/404",
     component: Page404,

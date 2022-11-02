@@ -16,6 +16,21 @@ const routes = [
     icon: "CardsIcon",
     name: "Tickets",
   },
+  {
+    path: "/app/stats",
+    icon: "StatsIcon",
+    name: "Estatisticas",
+  },
+  {
+    path: "/app/history",
+    icon: "HistoryIcon",
+    name: "Histórico de Transações",
+  },
+  {
+    path: "/app/clients",
+    icon: "ClientIcon",
+    name: "Clientes",
+  },
   // {
   //   path: "/app/cards",
   //   icon: "CardsIcon",

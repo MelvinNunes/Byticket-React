@@ -1,12 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import ImageLight from "../assets/img/login-office.jpeg";
 import ImageDark from "../assets/img/login-office-dark.jpeg";
-import { GithubIcon, TwitterIcon } from "../icons";
-import { Label, Input, Button } from "@windmill/react-ui";
 
 function Login() {
+  const navigate = useHistory();
+
+  const goHome = () => {
+    navigate.push("/app");
+  };
+
   return (
     <div className="flex items-center min-h-screen p-6 bg-gray-50 dark:bg-gray-900">
       <div className="flex-1 h-full max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-xl dark:bg-gray-800">
@@ -30,38 +34,35 @@ function Login() {
               <h1 className="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">
                 Entrar
               </h1>
-              <Label>
-                <span>Nome de Usúario</span>
-                <Input className="mt-1" type="text" placeholder="exemplo" />
-              </Label>
+              <div className="mt-4 flex flex-col">
+                <span>Nome de usúario</span>
+                <input
+                  className="mt-1 px-3 py-2 border-2 focus:outline-none"
+                  type="text"
+                  placeholder="Nome de usúario"
+                />
+              </div>
 
-              <Label className="mt-4">
+              <div className="mt-4 flex flex-col">
                 <span>Senha</span>
-                <Input
-                  className="mt-1"
+                <input
+                  className="mt-1 px-3 py-2 border-2 focus:outline-none"
                   type="password"
                   placeholder="***************"
                 />
-              </Label>
+              </div>
 
-              <Button className="mt-4" block tag={Link} to="/app">
+              <button
+                onClick={goHome}
+                className="mt-4 py-3 px-10 bg-blue-500 text-center text-white">
                 Entrar
-              </Button>
+              </button>
 
               <hr className="my-8" />
 
-              {/* <Button block layout="outline">
-                <GithubIcon className="w-4 h-4 mr-2" aria-hidden="true" />
-                Github
-              </Button>
-              <Button className="mt-4" block layout="outline">
-                <TwitterIcon className="w-4 h-4 mr-2" aria-hidden="true" />
-                Twitter
-              </Button> */}
-
               <p className="mt-4">
                 <Link
-                  className="text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
+                  className="text-sm font-medium text-blue-500 dark:text-blue-400 hover:underline"
                   to="/forgot-password">
                   Esqueceu a senha?
                 </Link>
